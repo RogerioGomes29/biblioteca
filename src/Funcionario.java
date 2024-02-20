@@ -1,12 +1,10 @@
 
-
 public class Funcionario {
     private String nome;
-
     private long cpf;
     private String cargo;
     private String salario;
-    private String endereco;
+    private Endereco endereco;
 
     public String getNome() {
         return nome;
@@ -40,11 +38,11 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public String getEndereco() {
+    public Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
 }
