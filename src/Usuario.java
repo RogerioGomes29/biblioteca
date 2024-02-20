@@ -1,12 +1,9 @@
 
-
 public class Usuario {
-
-
     private String nome;
     private int codigo;
-    private long cpf;
-    private String endereco;
+    private Long cpf;
+    private Endereco endereco;
 
     public String getNome() {
         return nome;
@@ -32,11 +29,11 @@ public class Usuario {
         this.cpf = cpf;
     }
 
-    public String getEndereco() {
+    public Endereco getEndereco() {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
 }

@@ -1,11 +1,10 @@
 
-
 public class Locacao {
 
     private String ValorLocacao;
     private String ValorMulta;
-    private String funcionario;
-    private String usuario;
+    private Funcionario funcionario;
+    private Usuario usuario;
 
     private String dataLocacao;
     private String dataDevolucao;
@@ -28,19 +27,19 @@ public class Locacao {
         ValorMulta = valorMulta;
     }
 
-    public String getFuncionario() {
+    public Funcionario getFuncionario() {
         return funcionario;
     }
 
-    public void setFuncionario(String funcionario) {
+    public void setFuncionario(Funcionario funcionario) {
         this.funcionario = funcionario;
     }
 
-    public String getUsuario() {
+    public Usuario getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(String usuario) {
+    public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
 
