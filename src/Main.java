@@ -56,11 +56,11 @@ public class Main {
                case 3:
                    System.out.println("::::::::::::::::::Bem vindo ao menu livro::::::::::::::::::::::");
                    System.out.println("Digite o título do livro:");
-
+                   locacao.getLivro().setTitulo(scanner.next());
                    System.out.println("Digite o gênero do livro:");
-
-
-
+                   locacao.getLivro().setGenero(scanner.next());
+                   System.out.println("Digite o nome do autor");
+                   locacao.getLivro().setAutor(scanner.next());
                    break;
                case 4:
                    System.out.println("Bem vindo ao menu cadastro");
