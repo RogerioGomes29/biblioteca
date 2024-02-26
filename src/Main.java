@@ -39,8 +39,7 @@ public class Main {
                    break;
                case 2:
                    System.out.println(":::::::::::::::::::::Bem vindo ao menu usuário:::::::::::::::::::::");
-                   //TODO: CRIAR O MENU DE USUARIO
-                   //EXEMPLO ABAIXO:
+
                    System.out.println("Digite seu nome:");
                    locacao.getUsuario().setNome(scanner.next());
                    System.out.println("Digite o seu código:");

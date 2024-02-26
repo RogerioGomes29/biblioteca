@@ -13,7 +13,9 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getCodigo() { return codigo; }
+    public String getCodigo() {
+        return codigo;
+    }
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
