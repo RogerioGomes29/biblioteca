@@ -9,7 +9,7 @@ public class Locacao {
     private String dataLocacao;
     private String dataDevolucao;
     private String livroLocado;
-    private String autor;
+    private Livro livro;
 
     public String getValorLocacao() {
         return ValorLocacao;
@@ -67,12 +67,14 @@ public class Locacao {
         this.livroLocado = livroLocado;
     }
 
-    public String getAutor() {
-        return autor;
+    public Livro getLivro() {
+        return livro;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setLivro(Livro livro) {
+        this.livro = livro;
     }
 }
+
+
 
