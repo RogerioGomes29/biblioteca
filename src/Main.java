@@ -41,12 +41,27 @@ public class Main {
                    System.out.println(":::::::::::::::::::::Bem vindo ao menu usuário:::::::::::::::::::::");
                    //TODO: CRIAR O MENU DE USUARIO
                    //EXEMPLO ABAIXO:
-                   System.out.println("Digite seu nome");
+                   System.out.println("Digite seu nome:");
                    locacao.getUsuario().setNome(scanner.next());
-
+                   System.out.println("Digite o seu código:");
+                   locacao.getUsuario().setCodigo(scanner.next());
+                   System.out.println("Digite o seu CPF:");
+                   locacao.getUsuario().setCpf(scanner.next());
+                   System.out.println("Digite a sua rua:");
+                   locacao.getUsuario().getEndereco().setRua(scanner.next());
+                   System.out.println("Digite o seu bairro:");
+                   locacao.getUsuario().getEndereco().setBairro(scanner.next());
+                   System.out.println("Digite o número da sua casa:");
+                   locacao.getUsuario().getEndereco().setNumero(scanner.nextInt());
                    break;
                case 3:
-                   System.out.println("Bem vindo ao menu livro");
+                   System.out.println("::::::::::::::::::Bem vindo ao menu livro::::::::::::::::::::::");
+                   System.out.println("Digite o título do livro:");
+
+                   System.out.println("Digite o gênero do livro:");
+
+
+
                    break;
                case 4:
                    System.out.println("Bem vindo ao menu cadastro");

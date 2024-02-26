@@ -1,8 +1,8 @@
 
 public class Usuario {
     private String nome;
-    private int codigo;
-    private Long cpf;
+    private String codigo;
+    private String cpf;
     private Endereco endereco;
 
     public String getNome() {
@@ -13,19 +13,17 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public int getCodigo() {
-        return codigo;
-    }
+    public String getCodigo() { return codigo; }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
-    public long getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
