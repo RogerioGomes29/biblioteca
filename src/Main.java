@@ -38,7 +38,6 @@ scanner.nextLine();
                     System.out.println("Digite seu bairro:");
                     locacao.getFuncionario().getEndereco().setBairro(scanner.next());
                     break;
-
                 case 2:
                     System.out.println(":::::::::::::::::::::Bem vindo ao menu usuário:::::::::::::::::::::");
 
