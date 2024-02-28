@@ -1,7 +1,4 @@
 import java.util.Scanner;
-import java.util.Scanner;
-import java.util.Date;
-import java.text.SimpleDateFormat;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +15,7 @@ public class Main {
             System.out.println("0 - Sair");
             System.out.println("Digite aqui a opção");
             opcao = scanner.nextInt();
+
             switch (opcao) {
                 case 1:
                     System.out.println(":::::::::::::::::::::Bem vindo ao menu funcionario:::::::::::::::::::::");
@@ -37,6 +35,7 @@ public class Main {
                     System.out.println("Digite o numero da sua casa:");
                     locacao.getFuncionario().getEndereco().setNumero(scanner.nextInt());
                     break;
+
                 case 2:
                     System.out.println(":::::::::::::::::::::Bem vindo ao menu usuário:::::::::::::::::::::");
 
@@ -53,6 +52,7 @@ public class Main {
                     System.out.println("Digite o número da sua casa:");
                     locacao.getUsuario().getEndereco().setNumero(scanner.nextInt());
                     break;
+
                 case 3:
                     System.out.println("::::::::::::::::::Bem vindo ao menu livro::::::::::::::::::::::");
                     System.out.println("Digite o título do livro:");
@@ -63,8 +63,8 @@ public class Main {
                     locacao.getLivro().setAutor(scanner.next());
                     break;
 
-                switch (opcao) {
-                    case 4:
+                case 4:
+                    do {
                         System.out.print("Selecione o cadastro na qual o mesmo queira acessar: \n" +
                                 " 1 - Cadastro do Funcionário: \n" +
                                 " 2 - Cadastro do Usuário: \n" +
@@ -72,17 +72,38 @@ public class Main {
                                 " 9 _ Voltar ao menu principal: \n" +
                                 "Digite a opção desejada: ");
                         opcao = scanner.nextInt();
-                    case 5:
-                        System.out.println("Bem vindo ao menu locação");
-                        break;
-                    case 0:
-                        break;
-                    default:
-                        System.out.println("Opção inválida");
 
-                }
+                        switch (opcao) {
+                            case 1:
+                                //TODO: MOSTRAR NA TELA OS DADOS DO FUNCIONARIO
+                                System.out.println("Cadastro do Funcionário");
+                                System.out.println(locacao.toString());
+                                break;
+                            case 2:
+                                //TODO: MOSTRAR NA TELA OS DADOS DO USUARIO
+                                System.out.println("2 - Cadastro do Usuário:");
+                                break;
+                            case 3:
+                                //TODO: MOSTRAR NA TELA OS DADOS DO LIVRO
+                                System.out.println("Cadastro do Livro:");
+                                break;
+                            default:
+                                System.out.println("opção invalida");
+                                break;
+                        }
+                    } while (opcao != 9);
+
+                case 5:
+                    System.out.println("Bem vindo ao menu locação");
+                    break;
+                case 0:
+                    break;
+                default:
+                    System.out.println("Opção inválida");
 
             }
-        } while (opcao != 0);
 
+        } while (opcao != 0);
     }
+
+}

@@ -11,6 +11,20 @@ public class Locacao {
     private String livroLocado;
     private Livro livro;
 
+    public Locacao(String valorLocacao, String valorMulta, Funcionario funcionario, Usuario usuario, String dataLocacao, String dataDevolucao, String livroLocado, Livro livro) {
+        ValorLocacao = valorLocacao;
+        ValorMulta = valorMulta;
+        this.funcionario = new Funcionario();
+        this.usuario = usuario;
+        this.dataLocacao = dataLocacao;
+        this.dataDevolucao = dataDevolucao;
+        this.livroLocado = livroLocado;
+        this.livro = livro;
+    }
+
+    public Locacao() {
+    }
+
     public String getValorLocacao() {
         return ValorLocacao;
     }
