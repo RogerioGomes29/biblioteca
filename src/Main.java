@@ -15,25 +15,28 @@ public class Main {
             System.out.println("0 - Sair");
             System.out.println("Digite aqui a opção");
             opcao = scanner.nextInt();
-
+scanner.nextLine();
             switch (opcao) {
                 case 1:
                     System.out.println(":::::::::::::::::::::Bem vindo ao menu funcionario:::::::::::::::::::::");
 
-                    System.out.println("Digite seu nome:");
-                    locacao.getFuncionario().setNome(scanner.next());
+                    System.out.print("Cadastro do funcionário: \n"
+                            + "Nome: ");
+                    locacao.getFuncionario().setNome(scanner.nextLine());
                     System.out.println("Digite seu cpf:");
                     locacao.getFuncionario().setCpf(scanner.nextLong());
                     System.out.println("Digite seu cargo:");
                     locacao.getFuncionario().setCargo(scanner.next());
                     System.out.println("Digite seu salario:");
                     locacao.getFuncionario().setSalario(scanner.next());
-                    System.out.println("Digite sua rua:");
+                    System.out.print("Endereço------\n"
+                            + "Rua: ");
+                    scanner.nextLine();
                     locacao.getFuncionario().getEndereco().setRua(scanner.next());
-                    System.out.println("Digite seu bairro:");
-                    locacao.getFuncionario().getEndereco().setBairro(scanner.next());
                     System.out.println("Digite o numero da sua casa:");
                     locacao.getFuncionario().getEndereco().setNumero(scanner.nextInt());
+                    System.out.println("Digite seu bairro:");
+                    locacao.getFuncionario().getEndereco().setBairro(scanner.next());
                     break;
 
                 case 2:
