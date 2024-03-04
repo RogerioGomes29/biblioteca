@@ -42,10 +42,10 @@ public class Funcionario {
         return endereco;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
 
+    public Funcionario() {
+        this.endereco = new Endereco();
+    }
     @Override
     public String toString() {
         return "Funcionario{" +
