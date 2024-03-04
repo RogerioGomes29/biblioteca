@@ -1,7 +1,7 @@
 
 public class Funcionario {
     private String nome;
-    private long cpf;
+    private Long cpf;
     private String cargo;
     private String salario;
     private Endereco endereco;
@@ -14,11 +14,11 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public long getCpf() {
+    public Long getCpf() {
         return cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(Long cpf) {
         this.cpf = cpf;
     }
 
@@ -44,6 +44,17 @@ public class Funcionario {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", cpf=" + cpf +
+                ", cargo='" + cargo + '\'' +
+                ", salario='" + salario + '\'' +
+                ", endereco=" + endereco +
+                '}';
     }
 }
 

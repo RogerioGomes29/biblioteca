@@ -8,8 +8,16 @@ public class Locacao {
 
     private String dataLocacao;
     private String dataDevolucao;
-    private String livroLocado;
+    private Livro livroLocado;
     private Livro livro;
+
+    public Locacao() {
+        this.funcionario = new Funcionario();
+        this.usuario = new Usuario();
+        this.livro = new Livro();
+        this.livroLocado = new Livro();
+    }
+
 
     public String getValorLocacao() {
         return ValorLocacao;
@@ -59,11 +67,11 @@ public class Locacao {
         this.dataDevolucao = dataDevolucao;
     }
 
-    public String getLivroLocado() {
+    public Livro getLivroLocado() {
         return livroLocado;
     }
 
-    public void setLivroLocado(String livroLocado) {
+    public void setLivroLocado(Livro livroLocado) {
         this.livroLocado = livroLocado;
     }
 
